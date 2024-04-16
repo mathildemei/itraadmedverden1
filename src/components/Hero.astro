@@ -10,7 +10,7 @@ import "../styles/main.css";
         <div class="logo">
             <img src="../ikoner/itmv-logo.svg" alt="i tråd med verden logo" id="hero_logo">
         </div>
-        <h1 id="hero-tekst">"Vi er en lokal løsning til et globalt problem"</h1>
+        <h1 id="hero-tekst">En lokal løsning <br> til et globalt problem</h1>
         <p id="hero-undertekst">- Liv, Chef for Design og Udvikling</p>
     </div>
 </section>
@@ -21,14 +21,17 @@ import "../styles/main.css";
         max-height: 100vh;
     }
     #hero-tekst {
-        font-size: 68px;
-        font-weight: 400;
+        font-size: clamp(24px, 5vw, 180px);
+        font-weight: var(--font-weight-regular);
         color: var(--white);
+        padding: 2rem 0;
     }
 
     #hero-undertekst {
         color: var(--white);
         opacity: 80%;
+        font-weight: var(--font-weight-light);
+        font-size: 24px;
     }
 
     .hero_wrapper {
@@ -40,8 +43,8 @@ import "../styles/main.css";
     align-items: center;
     height: 100%;
     width: 100%;
-    padding-top: 10%;
-    gap: 4rem;
+    padding-top: 5%;
+    /*gap: 4rem;*/
     }
 
     #hero_logo {

@@ -78,7 +78,16 @@ h4,
 p {
   font-family: var(--font-helvetica);
   font-weight: 500;
+  font-size: 48px;
   color: var(--blue);
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 32px;
 }
 
 p {
