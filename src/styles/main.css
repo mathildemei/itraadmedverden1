@@ -36,7 +36,7 @@
   --h1-resizable: clamp(3rem, 7vw, 7rem);
   --h2-resizable: clamp(24px, 16vw, 60px);
   --h3-resizable: clamp(24px, 1.6em, 60px);
-  --p: 20px;
+  --p: 1.2rem;
   --card-text: 28px;
 
   /********* Container størrelse *******/
