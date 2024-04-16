@@ -35,10 +35,11 @@
   --h1-resizable: clamp(3rem, 7vw, 7rem);
   --h2-resizable: clamp(24px, 16vw, 60px);
   --h3-resizable: clamp(24px, 1.6em, 60px);
-  --p: 2rem;
+  --p: 20px;
+  --card-text: 28px;
 
   /********* Container størrelse *******/
-  --small-container: 590px;
+  --small-container: 690px;
 }
 
 * {
@@ -85,7 +86,7 @@ h3,
 h4,
 p {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 48px;
   color: var(--blue);
 }
@@ -100,4 +101,6 @@ h3 {
 
 p {
   font-size: var(--p);
+  font-weight: 400;
+  line-height: 150%;
 }

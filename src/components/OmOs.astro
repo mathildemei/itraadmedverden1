@@ -11,11 +11,20 @@ import "../styles/main.css";
             <p>Med vores team af designere og socialt fagligt personale sørger vi for flow, fleksibilitet og tryghed i processen fra ide til færdigt produkt.</p>
         </div>
         <div class="omos_galleri_wrapper">
-            <h3>Vi står bag I Tråd Med Verden</h3>
+            <h2>Vi står bag I Tråd Med Verden</h2>
             <div class="image_wrapper_3">
-                <img src="../img/billede1.png" alt="billede af ansat">
-                <img src="../img/billede2.png" alt="billede af ansat">
-                <img src="../img/billede3.png" alt="billede af ansat">
+                <div class="img_moed_box">
+                    <img src="../img/billede1.png" alt="billede af ansat">
+                    <p>Stefani Biber</p>
+                </div>
+                <div class="img_moed_box">
+                    <img src="../img/billede2.png" alt="billede af ansat">
+                    <p>Liv Heckman</p>
+                </div>
+                <div class="img_moed_box">
+                    <img src="../img/billede3.png" alt="billede af ansat">
+                    <p>Luna Stærke</p>
+                </div>
             </div>
         </div>
     </div>
@@ -27,8 +36,37 @@ import "../styles/main.css";
     position: relative;
 }
 .omos_tekst_wrapper {
+    padding: 240px 0 80px 0;
     max-width: var(--small-container);
     margin: auto;
+}
+
+.omos_tekst_wrapper h1 {
+    padding-bottom: 2rem;
+}
+
+.omos_tekst_wrapper p {
+    padding-bottom: 2rem;
+}
+
+.omos_galleri_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 80px;
+}
+
+.img_moed_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_moed_box p {
+    color: var(--red);
+    font-size: var(--card-text);
+    font-weight: 400;
 }
 .image_wrapper_3 {
     display: flex;
