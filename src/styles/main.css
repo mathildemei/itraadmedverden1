@@ -65,6 +65,7 @@ h4,
 p {
   font-family: var(--font-helvetica);
   font-weight: 500;
+  color: var(--blue);
 }
 
 p {
