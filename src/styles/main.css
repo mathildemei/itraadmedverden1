@@ -71,6 +71,12 @@ video {
   object-fit: cover;
 }
 
+section {
+  height: auto;
+  min-height: 800px;
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
