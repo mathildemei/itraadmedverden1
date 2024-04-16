@@ -3,9 +3,12 @@ import "../styles/main.css";
 ---
 
 <section id="hero">
+    <video muted loop autoplay>
+        <source src="../video/hero_placeholder_vid.webm" type="video/webm">
+      </video>
     <div class="hero_wrapper">
         <div class="logo">
-            <img src="" alt="">
+            <img src="../ikoner/itmv-logo.svg" alt="i tråd med verden logo" id="hero_logo">
         </div>
         <h1 id="hero-tekst">"Vi er en lokal løsning til et globalt problem"</h1>
         <p id="hero-undertekst">- Liv, Chef for Design og Udvikling</p>
@@ -14,4 +17,30 @@ import "../styles/main.css";
 
 <style>
 
+    #hero {
+        max-height: 100vh;
+    }
+    #hero-tekst {
+        font-size: 68px;
+        font-weight: 400;
+        color: var(--white);
+    }
+
+    .hero_wrapper {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    gap: 4rem;
+    }
+
+    #hero_logo {
+        height: 380px;
+        width: 380px;
+    }
 </style>
