@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/helvetica-regular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/helvetica-light.ttf");
+  font-weight: 400;
+}
+
+:root {
+  /* farver */
+  --white: #ffffff;
+  --black: #0f1620;
+  --beige: #f1eee9;
+  --red: #e94a27;
+  --blue: #3d5d6d;
+
+  /* afstande */
+  --padding-1: 2rem 5rem 0 5rem;
+  --section-padding: 4rem;
+  --section-margin-2: 3.2rem;
+  --content-padding: 2rem;
+
+  /* fonts */
+  --font-helvetica: "Helvetica";
+  --font-weight-regular: 500;
+  --font-weight-light: 400;
+
+  /****** Font størrelser *******/
+  --font-h4-clamp: clamp(24px, 2em, 60px);
+  --font-h4-clamp-resp: clamp(18px, 1.4em, 60px);
+  --h1-resizable: clamp(3rem, 7vw, 7rem);
+  --h2-resizable: clamp(24px, 16vw, 60px);
+  --h3-resizable: clamp(24px, 1.6em, 60px);
+  --p: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  margin: auto;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--white);
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--p);
+}
