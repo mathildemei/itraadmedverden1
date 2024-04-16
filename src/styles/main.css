@@ -36,6 +36,9 @@
   --h2-resizable: clamp(24px, 16vw, 60px);
   --h3-resizable: clamp(24px, 1.6em, 60px);
   --p: 2rem;
+
+  /********* Container størrelse *******/
+  --small-container: 590px;
 }
 
 * {
@@ -73,7 +76,6 @@ video {
 
 section {
   height: auto;
-  min-height: 800px;
   width: 100%;
 }
 
