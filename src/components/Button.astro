@@ -1,5 +1,24 @@
 ---
-const { link_to } = Astro.props;
+import "../styles/main.css";
+const { title } = Astro.props;
 ---
 
-<a href={link_to}><button><slot /></button></a>
+<div>
+  <button>{title}</button>
+</div>
+
+<style>
+  button {
+    color: #ffffff;
+    background-color: #3d5d6d;
+    cursor: pointer;
+    border: none;
+    padding-left: 1.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 1.8rem;
+    margin: 50px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+  }
+</style>
