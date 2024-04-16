@@ -2,7 +2,7 @@
 import "../styles/main.css";
 ---
 
-<section>
+<section class="tekst_wrapper">
   <h1>Mød vores andre ansatte</h1>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta neque
@@ -18,6 +18,19 @@ import "../styles/main.css";
 </section>
 
 <style>
+  .tekst_wrapper {
+    padding: 240px 0 80px 0;
+    max-width: var(--small-container);
+    margin: auto;
+  }
+
+  .tekst_wrapper h1 {
+    padding-bottom: 2rem;
+  }
+
+  .tekst_wrapper p {
+    padding-bottom: 2rem;
+  }
   @media screen and (min-width: 700px) {
     .CardContainer {
       display: flex;
