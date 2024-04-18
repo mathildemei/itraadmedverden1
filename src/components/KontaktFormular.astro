@@ -5,21 +5,21 @@ import ButtonKnap from "../components/Button.astro";
 
 <section class="tekst_wrapper">
   <h1>Flere spørgsmål? Send os en mail:</h1>
-  <form action="contract">
-    <label for="fornavn">
-      Fornavn:
+  <form action="contract" method="POST" data-netlify="true">
+    <label for="name">
+      Navn
       <input type="text" />
     </label>
-    <label for="efternavn">
-      Efternavn:
+    <label for="topic">
+      Emne
       <input type="text" />
     </label>
     <label for="E-mail">
-      E-mail:
+      E-mail
       <input type="email" />
     </label>
-    <label for="Massage">
-      Besked:
+    <label for="massage">
+      Besked
       <input type="text" />
     </label>
     <ButtonKnap link="https://www.itmv.dk/" title="Send" />
@@ -39,5 +39,17 @@ import ButtonKnap from "../components/Button.astro";
 
   .tekst_wrapper p {
     padding-bottom: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    color: var(--blue);
+  }
+
+  input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: black;
   }
 </style>
