@@ -8,6 +8,7 @@ import MoedAnsatte from "../components/MødAnsatte.astro";
 import Samarbejde from "../components/Samarbejde.astro";
 import Graf from "../components/Graf.astro";
 import Illustration2 from "../components/Illustration2.astro";
+import QA from "../components/QA.astro";
 ---
 
 <MainLayout title="I Tråd Med Verden">
@@ -21,8 +22,43 @@ import Illustration2 from "../components/Illustration2.astro";
   <!-- ESG cards -->
   <Graf />
   <Illustration2 />
-  <!-- Q&A -->
+  <section>
+    <h1 class="qa_h1">Q&A</h1>
+    <div>
+      <QA title="Hvad er Repair Service?">
+        <h1>Hello</h1>
+      </QA>
+    </div>
+    <div>
+      <QA title="Hvad koster Repair Service?">
+        <h1>Hello</h1>
+      </QA>
+    </div>
+    <div>
+      <QA title="Hvordan laver jeg en donation?">
+        <h1>Hello</h1>
+      </QA>
+    </div>
+    <div>
+      <QA title="Hvordan kontakter jeg jer?">
+        <h1>Hello</h1>
+      </QA>
+    </div>
+    <div>
+      <QA title="Hvordan kan jeg tage ansvar?">
+        <h1>Hello</h1>
+      </QA>
+    </div>
+  </section>
   <!-- Lad os snakke om det -->
   <!-- Kontrakt formular -->
   <!-- footer -->
+
+  <style>
+    .qa_h1 {
+      border-bottom: #3d5d6d solid 1px;
+      max-width: var(--small-container);
+      margin: auto;
+    }
+  </style>
 </MainLayout>

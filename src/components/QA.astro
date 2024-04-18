@@ -10,6 +10,7 @@ const { title } = Astro.props;
     <slot />
   </article>
 </details>
+
 <style>
   details,
   summary {
@@ -24,7 +25,7 @@ const { title } = Astro.props;
     cursor: pointer;
     list-style: none;
     margin-bottom: 0;
-    padding: 0.5rem;
+    padding: 1.7rem;
     border-bottom: #3d5d6d solid 1px;
   }
   article {
@@ -44,16 +45,8 @@ const { title } = Astro.props;
   }
 
   .tekst_wrapper {
-    padding: 240px 0 80px 0;
+    padding: -0.5px 0 80px 0;
     max-width: var(--small-container);
     margin: auto;
-  }
-
-  .tekst_wrapper h1 {
-    padding-bottom: 2rem;
-  }
-
-  .tekst_wrapper p {
-    padding-bottom: 2rem;
   }
 </style>
