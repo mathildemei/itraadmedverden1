@@ -1,0 +1,43 @@
+---
+import "../styles/main.css";
+import ButtonKnap from "../components/Button.astro";
+---
+
+<section class="tekst_wrapper">
+  <h1>Flere spørgsmål? Send os en mail:</h1>
+  <form action="contract">
+    <label for="fornavn">
+      Fornavn:
+      <input type="text" />
+    </label>
+    <label for="efternavn">
+      Efternavn:
+      <input type="text" />
+    </label>
+    <label for="E-mail">
+      E-mail:
+      <input type="email" />
+    </label>
+    <label for="Massage">
+      Besked:
+      <input type="text" />
+    </label>
+    <ButtonKnap link="https://www.itmv.dk/" title="Send" />
+  </form>
+</section>
+
+<style>
+  .tekst_wrapper {
+    padding: 240px 0 80px 0;
+    max-width: var(--small-container);
+    margin: auto;
+  }
+
+  .tekst_wrapper h1 {
+    padding-bottom: 2rem;
+  }
+
+  .tekst_wrapper p {
+    padding-bottom: 2rem;
+  }
+</style>
