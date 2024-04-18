@@ -18,6 +18,53 @@ import "../styles/main.css";
   </p>
 
   <!-- Billedekarrusel -->
+  <article class="galleri">
+    <div class="slider">
+      <ul>
+        <li>
+          <img src="../../public/img/galleri/5.png" alt="Tørresnor 1" />
+        </li>
+        <li>
+          <img src="../../public/img/galleri/3.png" alt="Naturfavning" />
+        </li>
+        <li>
+          <img
+            src="../../public/img/galleri/4.png"
+            alt="Proces efter naturfarvning"
+          />
+        </li>
+        <li><img src="../../public/img/galleri/6.png" alt="Tørresnor 2" /></li>
+        <li>
+          <img src="../../public/img/galleri/7.png" alt="Stoflager" />
+        </li>
+        <li>
+          <img src="../../public/img/galleri/8.png" alt="Syværksted" />
+        </li>
+        <li>
+          <img
+            src="../../public/img/galleri/1.png"
+            alt="Billede af færdige produkt - tehætte"
+          />
+        </li>
+        <li>
+          <img
+            src="../../public/img/galleri/2.png"
+            alt="Billede af færdige produkt - lable"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="pagination-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </article>
 </section>
 
 <style>
@@ -34,4 +81,84 @@ import "../styles/main.css";
   .tekst_wrapper p {
     padding-bottom: 2rem;
   }
+
+  .galleri {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    transition: all 1s ease;
+  }
+
+  .slider {
+    width: 550px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 3px 20px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    width: 550px;
+    height: 350px;
+    border-radius: 3px;
+  }
+
+  .pagination-dots {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .dot {
+    width: 20px;
+    height: 6px;
+    border-radius: 5px;
+  }
+
+  .dot.active {
+    background-color: var(--blue);
+  }
 </style>
+
+<script>
+  let currentSlide = 0;
+
+  function startSlider() {
+    let imageCount = document.querySelectorAll("img");
+    let images = document.querySelectorAll("ul");
+
+    if (imageCount.length === 0) {
+      imageCount = document.querySelectorAll("img");
+      images.style.transform = `translateX(0px)`;
+      return;
+    }
+
+    images.style.transform = `translateX(-${currentSlide * 550}px)`;
+
+    let dots = document.querySelectorAll(".dot");
+    dots.forEach((dot) => {
+      dot.classList.remove("active");
+    });
+
+    dots[currentSlide].classList.add("active");
+
+    if (currentSlide === imageCount.length - 1) {
+      currentSlide = 0;
+    } else {
+      currentSlide++;
+    }
+  }
+
+  setInterval(() => {
+    startSlider();
+  }, 3000);
+</script>
