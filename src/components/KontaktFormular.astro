@@ -6,25 +6,25 @@ import ButtonKnap from "../components/Button.astro";
 <section class="tekst_wrapper">
   <h1>Flere spørgsmål? Send os en mail:</h1>
   <form action="contact" method="POST" data-netlify="true">
-    <div class="row">
-      <div class="col">
-        <label for="name">Navn</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="col">
-        <label for="topic">Emne</label>
-        <input type="text" id="topic" name="topic" required />
-      </div>
+    <div class="name">
+      <label for="name">Navn</label>
+      <input type="text" id="name" name="name" required />
     </div>
-    <div class="row">
+    <div class="emne">
+      <label for="topic">Emne</label>
+      <input type="text" id="topic" name="topic" required />
+    </div>
+    <div class="email">
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required />
     </div>
-    <div class="row">
+    <div class="besked">
       <label for="message">Besked</label>
       <textarea id="message" name="message" required></textarea>
     </div>
-    <ButtonKnap link="https://www.itmv.dk/" title="Send" />
+    <div>
+      <ButtonKnap link="https://www.itmv.dk/" title="Send" />
+    </div>
   </form>
 </section>
 
@@ -42,13 +42,6 @@ import ButtonKnap from "../components/Button.astro";
 
   .tekst_wrapper p {
     padding-bottom: 2rem;
-  }
-
-  .col {
-    display: flex;
-    flex-direction: column;
-    width: 48%; /* Adjust width as needed */
-    margin-right: 2%; /* Adjust spacing between columns */
   }
 
   label,
@@ -71,5 +64,38 @@ import ButtonKnap from "../components/Button.astro";
 
   input {
     margin-bottom: 1rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: stretch;
+  }
+
+  .name {
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    padding-right: 5px;
+  }
+
+  .emne {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    padding-left: 5px;
+  }
+
+  .email {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+
+  .besked {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 3;
   }
 </style>
