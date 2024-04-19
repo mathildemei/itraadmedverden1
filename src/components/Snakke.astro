@@ -1,0 +1,52 @@
+---
+import "../styles/main.css";
+---
+
+<section class="tekst_wrapper">
+  <h1>Lad os mødes og snakke om det!</h1>
+  <p>
+    Tøv endelig ikke med at række ud på enten mail eller opkald. Du er også
+    velkommen til at besøge os på vores værksted i Lufttoftegade eller Farum
+    Midtpunkt.
+  </p>
+  <article class="grid_1-1">
+    <div class="ramme1">
+      <strong>Værkstedet i Lundtoftegade</strong>
+      <br /> Lundtoftegade 23, 1 sal <br /> 2200 København N
+    </div>
+    <div class="ramme1">
+      <strong>Værkstedet i Farum Midtpunkt</strong>
+      <br /> Nygårdterasserne 213A <br /> 3520 Farum
+    </div>
+  </article>
+</section>
+
+<style>
+  .tekst_wrapper {
+    padding: 240px 0 80px 0;
+    max-width: var(--small-container);
+    margin: auto;
+  }
+
+  .tekst_wrapper h1 {
+    padding-bottom: 2rem;
+  }
+
+  .tekst_wrapper p {
+    padding-bottom: 2rem;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--blue);
+    column-gap: 1rem;
+  }
+
+  .ramme1 {
+    border: var(--red) solid 2px;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    line-height: 1.5rem;
+  }
+</style>
