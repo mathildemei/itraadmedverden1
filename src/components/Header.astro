@@ -1,0 +1,72 @@
+---
+import "../styles/main.css";
+import Scrollindicator from "../components/Scrollindicator.astro"
+---
+<div class="scroll_indicator">
+    <Scrollindicator />
+  </div>
+  <div class="logo-top">
+    <img src="../../public/ikoner/itmv-logo.svg" alt="logo">
+  </div>
+<div id="nav-bar-top">
+<nav class="topnav">
+    <a href="#top">Hvem er vi?</a>
+    <a href="#sec1">Syerske</a>
+    <a href="#sec2">Repair service</a>
+    <a href="#sec3">Samarbejde</a>
+    <a href="#sec4">Q&A</a>
+</nav></div>
+
+<style>
+    .scroll_indicator {
+  position: sticky;
+  top: 0;
+}
+img{
+    width: auto;
+    height: 80px;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+    #nav-bar-top{
+        position: fixed;
+    text-align:center;
+    position:fixed;
+    z-index:9999;
+    margin: 0 auto; left:0px; right:0px;
+    float:clear;
+    }
+    #sec1{
+        height: 600px
+    }
+    #sec2{
+        height: 600px
+    }
+    #sec3{
+        height: 600px
+    }
+    .topnav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       gap: 30px;
+       padding-top: 25px;
+       flex-wrap: wrap;
+    }
+    a{
+        /* hjælp med font var */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: var(--font-weight-light);
+        background-color: #DDD7CB;
+        width: 130px;
+        height: 40px;
+        border-radius: 100px;
+        color: black;
+        text-decoration: none;
+    }
+</style>
