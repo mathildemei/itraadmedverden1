@@ -34,8 +34,14 @@ import "../styles/main.css";
     </ul>
   </article>
   <article class="centered">
-    <h3>Tilmeld nyhedsbrev</h3><h4>Email</h4><button class="rounded-button"
-    ></button><button class="outlined-button">Sign up</button>
+    <h3>Tilmeld nyhedsbrev</h3>
+    <form action="contact" method="POST" data-netlift="true">
+      <div class="email">
+        <label for="email"><h4>Email</h4></label>
+        <input type="email" id="email" name="email" required />
+      </div>
+    </form>
+    <button class="outlined-button">Sign up</button>
     <div class="icon-container">
       <img src="../../public/img/Facebook.png" alt="" class="small-icon" />
       <img src="../../public/img/Instagram.png" alt="" class="small-icon" />
@@ -120,7 +126,13 @@ import "../styles/main.css";
     list-style: none;
   }
 
-  .rounded-button {
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  input {
     width: 288px;
     height: 46px;
     border: none;
