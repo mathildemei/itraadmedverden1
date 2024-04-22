@@ -26,6 +26,11 @@ import Syerske from "../components/Syerske.astro";
   <div class="header_logo_container">
     <Logoheader />
   </div>
+  <div class="burger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
   <div class="header_nav_container">
     <div id="nav-bar-top">
       <nav class="topnav">
@@ -213,4 +218,53 @@ import Syerske from "../components/Syerske.astro";
     color: black;
     text-decoration: none;
   }
+
+  .burger-menu {
+    cursor: pointer;
+    z-index: 2;
+    display: none; /* Hide the burger menu icon by default */
+    cursor: pointer;
+    position: fixed; /* Position the burger menu fixed to the viewport */
+    top: 20px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    z-index: 9999; /* Ensure the burger menu appears above other content */
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #7b6153;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  /* Add hover effect to the burger menu lines */
+  .bar:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .topnav {
+      display: none; /* Hide the navigation links by default on smaller screens */
+    }
+
+    .topnav.active {
+      display: flex; /* Show the navigation links when burger menu is clicked */
+    }
+
+    .burger-menu {
+      display: block; /* Show the burger menu icon on smaller screens */
+    }
+  }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.querySelector(".burger-menu");
+    const navLinks = document.querySelector(".topnav");
+
+    burgerMenu.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  });
+</script>
