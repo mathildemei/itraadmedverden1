@@ -13,10 +13,27 @@ import QA from "../components/QA.astro";
 import Snakke from "../components/Snakke.astro";
 import KontaktFormular from "../components/KontaktFormular.astro";
 import Footer from "../components/Footer.astro";
+import Scrollindicator from "../components/Scrollindicator.astro"
+import Logoheader from "../components/Logo-header.astro"
 ---
 
 <MainLayout title="I Tråd Med Verden">
   <HeroPage />
+  <div class="scroll_indicator">
+    <Scrollindicator />
+  </div>
+  <div class="header_logo_container">
+<Logoheader />
+  </div>
+  <div class="header_nav_container">
+    <div id="nav-bar-top">
+    <nav class="topnav">
+        <a href="#sec1">Hvem er vi?</a>
+        <a href="#sec2">Syerske</a>
+        <a href="#sec3">Repair service</a>
+        <a href="#sec4">Samarbejde</a>
+        <a href="#sec5">Q&A</a>
+    </nav></div></div>
   <OmOs />
   <Illustration1 />
   <!-- En af vores syreske -->
@@ -137,4 +154,47 @@ import Footer from "../components/Footer.astro";
     max-width: var(--small-container);
     margin: auto;
   }
+  .scroll_indicator {
+  position: sticky;
+  top: 0;
+  z-index:9979;
+}
+.header_logo_container
+{
+    position: sticky;
+  top: 0;
+  z-index:9989;
+}
+.header_nav_container{
+  position: sticky;
+  top: 0;
+  z-index:9999;
+}
+    #nav-bar-top{
+    text-align:center;
+    margin: 0 auto; left:0px; right:0px;
+    float:clear;
+    }
+    .topnav{
+      position: sticky;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       gap: 30px;
+       padding-top: 25px;
+       flex-wrap: wrap;
+    }
+    a{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: var(--font-weight-light);
+        background-color: #DDD7CB;
+        width: 130px;
+        height: 40px;
+        border-radius: 100px;
+        color: black;
+        text-decoration: none;
+    }
 </style>
