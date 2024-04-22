@@ -13,8 +13,8 @@ import QA from "../components/QA.astro";
 import Snakke from "../components/Snakke.astro";
 import KontaktFormular from "../components/KontaktFormular.astro";
 import Footer from "../components/Footer.astro";
-import Scrollindicator from "../components/Scrollindicator.astro"
-import Logoheader from "../components/Logo-header.astro"
+import Scrollindicator from "../components/Scrollindicator.astro";
+import Logoheader from "../components/Logo-header.astro";
 import Syerske from "../components/Syerske.astro";
 ---
 
@@ -24,30 +24,37 @@ import Syerske from "../components/Syerske.astro";
     <Scrollindicator />
   </div>
   <div class="header_logo_container">
-<Logoheader />
+    <Logoheader />
   </div>
   <div class="header_nav_container">
     <div id="nav-bar-top">
-    <nav class="topnav">
+      <nav class="topnav">
         <a href="#sec1">Hvem er vi?</a>
         <a href="#sec2">Syerske</a>
         <a href="#sec3">Repair service</a>
         <a href="#sec4">Samarbejde</a>
         <a href="#sec5">Q&A</a>
-    </nav></div></div>
-    <section id="sec1">
-  <OmOs />
-  <Illustration1 /></section>
+        <a href="#sec6">Kontakt os</a>
+      </nav>
+    </div>
+  </div>
+  <section id="sec1">
+    <OmOs />
+    <Illustration1 />
+  </section>
   <section id="sec2">
-  <Syerske />
-  <MoedAnsatte /></section>
+    <Syerske />
+    <MoedAnsatte />
+  </section>
   <section id="sec3">
-  <Repair /></section>
+    <Repair />
+  </section>
   <section id="sec4">
-  <Samarbejde />
-  <!-- ESG cards -->
-  <Graf />
-  <Illustration2 /></section>
+    <Samarbejde />
+    <!-- ESG cards -->
+    <Graf />
+    <Illustration2 />
+  </section>
 
   <section id="sec5">
     <h1 class="qa_h1">Q&A</h1>
@@ -150,8 +157,10 @@ import Syerske from "../components/Syerske.astro";
       </QA>
     </div>
   </section>
-  <Snakke />
-  <KontaktFormular />
+  <section id="sec6">
+    <Snakke />
+    <KontaktFormular />
+  </section>
   <Footer />
 </MainLayout>
 
@@ -161,46 +170,47 @@ import Syerske from "../components/Syerske.astro";
     margin: auto;
   }
   .scroll_indicator {
-  position: sticky;
-  top: 0;
-  z-index:9979;
-}
-.header_logo_container
-{
     position: sticky;
-  top: 0;
-  z-index:9989;
-}
-.header_nav_container{
-  position: sticky;
-  top: 0;
-  z-index:9999;
-}
-    #nav-bar-top{
-    text-align:center;
-    margin: 0 auto; left:0px; right:0px;
-    float:clear;
-    }
-    .topnav{
-      position: sticky;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-       gap: 30px;
-       padding-top: 25px;
-       flex-wrap: wrap;
-    }
-    a{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: var(--font-weight-light);
-        background-color: #DDD7CB;
-        width: 130px;
-        height: 40px;
-        border-radius: 100px;
-        color: black;
-        text-decoration: none;
-    }
+    top: 0;
+    z-index: 9979;
+  }
+  .header_logo_container {
+    position: sticky;
+    top: 0;
+    z-index: 9989;
+  }
+  .header_nav_container {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  #nav-bar-top {
+    text-align: center;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    float: clear;
+  }
+  .topnav {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 25px;
+    flex-wrap: wrap;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: var(--font-weight-light);
+    background-color: #ddd7cb;
+    width: 130px;
+    height: 40px;
+    border-radius: 100px;
+    color: black;
+    text-decoration: none;
+  }
 </style>
