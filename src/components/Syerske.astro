@@ -1,97 +1,105 @@
 ---
 import "../styles/main.css";
-import Cardsplaces from "../components/Cards.astro"
+import Cardsplaces from "../components/Cards.astro";
 ---
+
 <div id="syerske-tag">
-<h2>En af vores syersker</h2></div>
+  <h2>En af vores syersker</h2>
+</div>
 <section id="syerske">
-    <div class="section-container">
-        <!-- <div class="card-container"><img src="../img/zoulikha-portraet.png" alt="syerske-photo"> -->
+  <div class="section-container">
+    <!-- <div class="card-container"><img src="../img/zoulikha-portraet.png" alt="syerske-photo"> -->
     <Cardsplaces>
-        <img src="../img/zoulikha-portraet.png" alt="portraet-zoulikha">
-            <p class="phototext">Zoulikha</p>
-        </Cardsplaces>
+      <img src="../img/zoulikha-portraet.png" alt="portraet-zoulikha" />
+      <p class="phototext">Zoulikha</p>
+    </Cardsplaces>
     <!-- </div> -->
     <div class="text-container">
-
-        <p>Zoulikha er en af de mange syersker som er hos I Tråd Med Verden. Zoulikha kommer oprindeligt fra Marokko men bor i dag på Nørrebro og holder til på vores værksted på Lundtoftegade. En af hendes ynglings ting på jobbet er at brodere. Zoulikha er hos os 2 gange om ugen og hendes rare smil bidrager altid til en dejlig atmosfære på systuen. Du kan høre mere om Zoulikhas historie i videoen herunder.</p>
-    <h4>"Jeg elsker at sy, jeg elsker at brodere, jeg elsker perler, det hele!"</h4>
-    <p id="citat-navn">- Zoulikha</p>
+      <p>
+        Zoulikha er en af de mange syersker som er hos I Tråd Med Verden.
+        Zoulikha kommer oprindeligt fra Marokko men bor i dag på Nørrebro og
+        holder til på vores værksted på Lundtoftegade. En af hendes ynglings
+        ting på jobbet er at brodere. Zoulikha er hos os to gange om ugen og
+        hendes rare smil bidrager altid til en dejlig atmosfære på systuen. Du
+        kan høre mere om Zoulikhas historie i videoen herunder.
+      </p>
+      <h4>
+        "Jeg elsker at sy, jeg elsker at brodere, jeg elsker perler, det hele!"
+      </h4>
+      <p id="citat-navn">- Zoulikha</p>
     </div>
-</div>
+  </div>
 </section>
 <section class="video-section-container">
-    <div>
-        <h2>Lær hende at kende:</h2>
-    </div>
+  <div>
+    <h2>Lær hende at kende:</h2>
+  </div>
 </section>
 
-
 <style>
-    #syerske-tag{
-        display:grid;
+  #syerske-tag {
+    display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 150px;
     padding: 0 390px;
-    }
-    #syerske-tag h2{
-        grid-column: 2 /span 3;
-    }
-    
-#syerske{
-    display:flex;
+  }
+  #syerske-tag h2 {
+    grid-column: 2 / span 3;
+  }
+
+  #syerske {
+    display: flex;
     flex-direction: row;
-}
-.section-container{
+  }
+  .section-container {
     padding: 0 200px;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 96px;
-}
-.video-section-container{
+  }
+  .video-section-container {
     padding: 80px 200px;
-}
-.text-container{
-
-}
-p{
+  }
+  .text-container {
+  }
+  p {
     font-size: 20px;
-    padding-top:30px;
-}
-h4{
-    padding-top: 40px
-}
-#citat-navn{
+    padding-top: 30px;
+  }
+  h4 {
+    padding-top: 40px;
+  }
+  #citat-navn {
     color: gray;
-}
-.phototext{
+  }
+  .phototext {
     color: var(--red);
-    padding-top:0px;
-}
-@media (max-width: 1100px) {
-    .section-container{
-    display:flex;
-    flex-direction: column;
-    padding: 10px;
-}
-p{
-    font-size: 20px;
-    padding-top:10px;
-}
-#syerske-tag{
-        display:flex;
-        flex-direction: row;
-        padding: 10px 20px;
+    padding-top: 0px;
+  }
+  @media (max-width: 1100px) {
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
     }
-    #syerske-tag h2{
-        display: flex;
+    p {
+      font-size: 20px;
+      padding-top: 10px;
     }
-.video-section-container{
-    padding: 70px 0px;
-}
-.card-container{
-    padding: 20px 10px;
-}
+    #syerske-tag {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 20px;
+    }
+    #syerske-tag h2 {
+      display: flex;
+    }
+    .video-section-container {
+      padding: 70px 0px;
+    }
+    .card-container {
+      padding: 20px 10px;
+    }
     /* .section-container{
         display: flex;
         flex-direction: column;
