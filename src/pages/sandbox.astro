@@ -10,6 +10,7 @@ import QA from "../components/QA.astro";
 import KontaktFormular from "../components/KontaktFormular.astro";
 import Snakke from "../components/Snakke.astro";
 import "../components/QA.astro";
+import Card from "../components/Cards.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/main.css";
 ---
@@ -32,4 +33,14 @@ import "../styles/main.css";
   </QA>
   <KontaktFormular />
   <Snakke />
+  <Card>
+    <img src="/public/img/zoulikha-portraet.png" alt="Zoulikha" />
+    <p>Zoulikha</p>
+  </Card>
 </MainLayout>
+
+<style>
+  img {
+    max-width: 25%;
+  }
+</style>
