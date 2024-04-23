@@ -1,23 +1,25 @@
 ---
 import "../styles/main.css";
-const {image, altTekst, imgName} = Astro.props;
+const { image, altTekst, imgName } = Astro.props;
 ---
 
 <div class="img_moed_box">
-    <img src={image} alt={altTekst}>
-    <div class="img_card_flip">
-        <p>"Vi bidrager til den grønne omstilling ved at skabe en cirkulær produktion"</p>
-    </div>
-    <p>{imgName}</p>
+  <img src={image} alt={altTekst} />
+  <div class="img_card_flip">
+    <p>
+      "Vi bidrager til den grønne omstilling ved at skabe en cirkulær
+      produktion"
+    </p>
+  </div>
+  <p>{imgName}</p>
 </div>
 
 <style>
-
-    .img_card_flip {
-        max-width: 360px;
-    }
+  .img_card_flip {
+    max-width: 360px;
+  }
 </style>
 
 <script>
-    // JS til at
+  // JS til at
 </script>
