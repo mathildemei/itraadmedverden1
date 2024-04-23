@@ -19,36 +19,48 @@ import "../styles/main.css";
     Med vores team af designere og socialt fagligt personale sørger vi for flow,
     fleksibilitet og tryghed i processen fra ide til færdigt produkt.
   </p>
-  <div class="CardContainer">
-    <div>
-      <img src="../img/stefani.png" alt="billede af ansat" />
-      <img src="../img/liv.png" alt="billede af ansat" />
-      <img src="../img/luna.png" alt="billede af ansat" />
-    </div>
-
-    <style>
-      .tekst_wrapper {
-        padding: 100px 0 80px 0;
-        max-width: var(--small-container);
-        margin: auto;
-      }
-
-      .tekst_wrapper h1 {
-        padding-bottom: 2rem;
-      }
-
-      .tekst_wrapper p {
-        padding-bottom: 2rem;
-      }
-      @media screen and (min-width: 700px) {
-        .CardContainer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 4rem;
-          margin: 5rem;
-        }
-      }
-    </style>
-  </div>
+  <article class="cards">
+    <img src="/public/img/stefani.png" alt="" />
+    <img src="/public/img/liv.png" alt="" />
+    <img src="/public/img/luna.png" alt="" />
+  </article>
 </section>
+
+<style>
+  .tekst_wrapper {
+    padding: 100px 0 80px 0;
+    max-width: var(--small-container);
+    margin: auto;
+  }
+
+  .tekst_wrapper h1 {
+    padding-bottom: 2rem;
+  }
+
+  .tekst_wrapper p {
+    padding-bottom: 2rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 150px;
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 50px;
+    }
+
+    img {
+      max-width: 40%;
+    }
+  }
+</style>
