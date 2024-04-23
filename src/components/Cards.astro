@@ -1,5 +1,32 @@
 ---
 import "../styles/main.css";
+const { name } = Astro.props;
 ---
 
-<div></div>
+<section>
+  <div class="card">
+    <slot class="img" />
+    <p class="phototext">Zoulikha</p>
+  </div>
+</section>
+
+<style>
+  .card {
+    display: grid;
+    grid-template-columns: repeat(3) 1fr;
+    gap: 0.5rem;
+  }
+
+  .phototext {
+    color: var(--red);
+    padding-top: 0px;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      display: grid;
+      grid-template-columns: repeat(2) 1fr;
+      gap: 0.5rem;
+    }
+  }
+</style>
