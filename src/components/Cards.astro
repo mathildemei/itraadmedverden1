@@ -5,8 +5,8 @@ const { name } = Astro.props;
 
 <section>
   <div class="card">
-    <slot class="img" />
-    <p class="phototext">Zoulikha</p>
+    <slot />
+    <p class="phototext">{name}</p>
   </div>
 </section>
 
@@ -19,7 +19,6 @@ const { name } = Astro.props;
 
   .phototext {
     color: var(--red);
-    padding-top: 0px;
   }
 
   @media (max-width: 768px) {
