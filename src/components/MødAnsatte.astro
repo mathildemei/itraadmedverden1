@@ -1,6 +1,6 @@
 ---
 import "../styles/main.css";
-import Cardsplace from "../components/Cards.astro"
+import Cardsplace from "../components/Cards.astro";
 ---
 
 <section class="tekst_wrapper">
@@ -15,15 +15,11 @@ import Cardsplace from "../components/Cards.astro"
       >Olena</strong
     > og <strong>Ira</strong> er begge syerske og ansat på deltid.
   </p>
-  <div class="CardContainer">
-    <Cardsplace><img src="../img/parveen.png" alt="Parveen syerske"></Cardsplace>
-    <Cardsplace><img src="../img/Oleena.png" alt="Oleena syerske"></Cardsplace>
-    <Cardsplace><img src="../img/ira.png" alt="Ira syerske"></Cardsplace>
-    
-    <!-- <img src="../img/billede1.png" alt="billede af ansat" />
-    <img src="../img/billede2.png" alt="billede af ansat" />
-    <img src="../img/billede3.png" alt="billede af ansat" /> -->
-  </div>
+  <article class="cards">
+    <img src="/public/img/parveen1.png" alt="" />
+    <img src="/public/img/oleena3.png" alt="" />
+    <img src="/public/img/ira3.png" alt="" />
+  </article>
 </section>
 
 <style>
@@ -40,13 +36,27 @@ import Cardsplace from "../components/Cards.astro"
   .tekst_wrapper p {
     padding-bottom: 2rem;
   }
-  @media screen and (min-width: 700px) {
-    .CardContainer {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 150px;
+  }
+
+  @media (max-width: 768px) {
+    .cards {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      gap: 4rem;
-      margin: 5rem;
+      gap: 1rem;
+      padding: 50px;
+    }
+
+    img {
+      max-width: 40%;
     }
   }
 </style>
