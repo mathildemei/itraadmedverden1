@@ -1,0 +1,35 @@
+---
+import "../styles/main.css";
+---
+
+<section class="cards">
+  <img src="/public/img/e.png" alt="" />
+  <img src="/public/img/s.png" alt="" />
+  <img src="/public/img/g.png" alt="" />
+</section>
+
+<style>
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 150px;
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 50px;
+    }
+
+    img {
+      max-width: 40%;
+    }
+  }
+</style>
