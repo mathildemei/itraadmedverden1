@@ -1,0 +1,89 @@
+---
+import "../styles/main.css";
+import Card from "../components/Card.astro";
+---
+
+<section>
+  <div class="omos_wrapper">
+    <div class="omos_tekst_wrapper">
+      <h1>Hvem er vi?</h1>
+      <p>
+        I Tråd Med Verden har siden 2018 specialiseret sig i genanvendelse af
+        kasserede tekstiler i samspil med socialtfagligt arbejde med mennesker
+        der står udenfor arbejdsmarkedet.
+      </p>
+      <p>
+        Vi samarbejder med virksomheder, som ønsker at udnytte vores tilbud om
+        repair service, samt få produceret nye produkter af kasserede tekstiler
+        inden for syning, plantefarve eller broderi.
+      </p>
+      <p>
+        Med vores team af designere og socialt fagligt personale sørger vi for
+        flow, fleksibilitet og tryghed i processen fra ide til færdigt produkt.
+      </p>
+    </div>
+    <div class="omos_galleri_wrapper">
+      <h2>Vi står bag I Tråd Med Verden</h2>
+      <div class="image_wrapper_3">
+        <div class="img_moed_box">
+          <img src="../img/billede1.png" alt="billede af ansat" />
+          <p>Stefani Biber</p>
+        </div>
+        <Card />
+        <div class="img_moed_box">
+          <img src="../img/billede3.png" alt="billede af ansat" />
+          <p>Luna Stærke</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .omos_wrapper {
+    position: relative;
+  }
+  .omos_tekst_wrapper {
+    padding: 100px 0 80px 0;
+    max-width: var(--small-container);
+    margin: auto;
+  }
+
+  .omos_tekst_wrapper h1 {
+    padding-bottom: 2rem;
+  }
+
+  .omos_tekst_wrapper p {
+    padding-bottom: 2rem;
+  }
+
+  .omos_galleri_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 80px;
+  }
+
+  .img_moed_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img_moed_box p {
+    color: var(--red);
+    font-size: var(--card-text);
+    font-weight: 400;
+  }
+  .image_wrapper_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .image_wrapper_3 img {
+    max-width: 360px;
+  }
+</style>

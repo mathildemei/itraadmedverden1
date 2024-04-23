@@ -1,0 +1,47 @@
+---
+import "../styles/main.css";
+---
+
+<section class="tekst_wrapper">
+  <h1>Mød vores andre ansatte</h1>
+  <p>
+    I Tråd med Verden består af et samlet team på 12 ansatte, som er fordelt ud
+    på vores værksteder på Nørrebro og i Farum. Fire af os er fultidsansatte, og
+    8 er i fleksjob eller deltidsansat. Yderligere har vi også mulighed for at
+    modtage flere i praktik eller kortere forløb. Her ser i tre af vores
+    ansatte. <br />
+    <strong>Parveen</strong> er syerske og ansat i fleksjob. <strong
+      >Olena</strong
+    > og <strong>Ira</strong> er begge syerske og ansat på deltid.
+  </p>
+  <div class="CardContainer">
+    <img src="../img/billede1.png" alt="billede af ansat" />
+    <img src="../img/billede2.png" alt="billede af ansat" />
+    <img src="../img/billede3.png" alt="billede af ansat" />
+  </div>
+</section>
+
+<style>
+  .tekst_wrapper {
+    padding: 100px 0 80px 0;
+    max-width: var(--small-container);
+    margin: auto;
+  }
+
+  .tekst_wrapper h1 {
+    padding-bottom: 2rem;
+  }
+
+  .tekst_wrapper p {
+    padding-bottom: 2rem;
+  }
+  @media screen and (min-width: 700px) {
+    .CardContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      margin: 5rem;
+    }
+  }
+</style>

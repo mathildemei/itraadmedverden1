@@ -1,0 +1,62 @@
+---
+import "../styles/main.css";
+---
+
+<section id="hero">
+  <video muted loop autoplay>
+    <source
+      src="https://mmei.dk/kea/09_indhold/hero_video.mp4"
+      type="video/webm"
+    />
+  </video>
+  <!-- <div class="hero_wrapper">
+    <div class="logo">
+      <img
+        src="../ikoner/itmv-logo.svg"
+        alt="i tråd med verden logo"
+        id="hero_logo"
+      />
+    </div>
+    <h1 id="hero-tekst">En lokal løsning <br /> til et globalt problem</h1>
+    <p id="hero-undertekst">- Liv, Chef for Design og Udvikling</p>
+  </div> -->
+</section>
+
+<style>
+  #hero {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  #hero-tekst {
+    font-size: clamp(24px, 5vw, 180px);
+    font-weight: var(--font-weight-light);
+    color: var(--white);
+    padding: 2rem 0;
+  }
+
+  #hero-undertekst {
+    color: var(--white);
+    opacity: 80%;
+    font-weight: var(--font-weight-light);
+    font-size: 24px;
+  }
+
+  .hero_wrapper {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /*padding-top: 2%;*/
+    /*gap: 4rem;*/
+  }
+
+  #hero_logo {
+    height: 380px;
+    width: 380px;
+  }
+</style>

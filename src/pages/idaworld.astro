@@ -1,0 +1,74 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Syerske from "../components/Syerske.astro";
+import Scrollindicator from "../components/Scrollindicator.astro"
+import "../styles/main.css";
+---
+<MainLayout>
+    <Syerske />
+</MainLayout>
+
+<style>
+    .scroll_indicator {
+  position: sticky;
+  top: 0;
+}
+img{
+    width: auto;
+    height: 80px;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+    #nav-bar-top{
+        position: fixed;
+    text-align:center;
+    position:fixed;
+    z-index:9999;
+    margin: 0 auto; left:0px; right:0px;
+    float:clear;
+    }
+    #sec1{
+        height: 600px
+    }
+    #sec2{
+        height: 600px
+    }
+    #sec3{
+        height: 600px
+    }
+    .topnav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       gap: 30px;
+       padding-top: 25px;
+       flex-wrap: wrap;
+    }
+    a{
+        /* hjælp med font var */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: var(--font-weight-light);
+        background-color: #DDD7CB;
+        width: 130px;
+        height: 40px;
+        border-radius: 100px;
+        color: black;
+        text-decoration: none;
+    }
+</style>
+<script>
+//     window.addEventListener("scroll", updateIndicator);
+
+// function updateIndicator() {
+//   const scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+//   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+//   const scrolledfactor = (scrolled / height) * 100;
+//   document.querySelector(".scroll_indicator").style.width = scrolledfactor + "%";
+// }
+
+</script>
