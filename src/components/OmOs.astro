@@ -1,6 +1,6 @@
 ---
 import "../styles/main.css";
-import Card from "../components/Card.astro";
+import Card from "../components/Cards.astro";
 ---
 
 <section>
@@ -24,17 +24,10 @@ import Card from "../components/Card.astro";
     </div>
     <div class="omos_galleri_wrapper">
       <h2>Vi står bag I Tråd Med Verden</h2>
-      <div class="image_wrapper_3">
-        <div class="img_moed_box">
-          <img src="../img/billede1.png" alt="billede af ansat" />
-          <p>Stefani Biber</p>
-        </div>
-        <Card />
-        <div class="img_moed_box">
-          <img src="../img/billede3.png" alt="billede af ansat" />
-          <p>Luna Stærke</p>
-        </div>
-      </div>
+      <Card>
+        <img src="/public/img/zoulikha-portraet.png" alt="Zoulikha" />
+        <p class="phototext">Zoulikha</p>
+      </Card>
     </div>
   </div>
 </section>
@@ -66,7 +59,7 @@ import Card from "../components/Card.astro";
     padding-bottom: 80px;
   }
 
-  .img_moed_box {
+  /* .img_moed_box {
     display: flex;
     flex-direction: column;
   }
@@ -85,5 +78,13 @@ import Card from "../components/Card.astro";
 
   .image_wrapper_3 img {
     max-width: 360px;
+  } */
+
+  img {
+    max-width: 25%;
+  }
+
+  .phototext {
+    color: var(--red);
   }
 </style>
