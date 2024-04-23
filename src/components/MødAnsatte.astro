@@ -24,7 +24,7 @@ import Cardsplace from "../components/Cards.astro";
 
 <style>
   .tekst_wrapper {
-    padding: 100px 0 0 0;
+    padding: 350px 0 0 0;
     max-width: var(--small-container);
     margin: auto;
   }
@@ -57,6 +57,35 @@ import Cardsplace from "../components/Cards.astro";
 
     img {
       max-width: 40%;
+    }
+  }
+  @media (min-width: 700px) {
+    .tekst_wrapper {
+      padding: 500px 0 0 0;
+      max-width: var(--small-container);
+      margin: auto;
+    }
+  }
+  @media (min-width: 800px) {
+    .tekst_wrapper {
+      padding: 600px 0 0 0;
+      max-width: var(--small-container);
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .tekst_wrapper {
+      padding: 800px 0 0 0;
+      max-width: var(--small-container);
+      margin: auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    .tekst_wrapper {
+      padding: 900px 0 0 0;
+      max-width: var(--small-container);
+      margin: auto;
     }
   }
 </style>

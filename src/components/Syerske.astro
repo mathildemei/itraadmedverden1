@@ -32,11 +32,19 @@ import Cardsplaces from "../components/Cards.astro";
     </div>
   </div>
 </section>
-<section class="video-section-container">
-  <div>
+<article>
+  <div class="video">
     <h2>Lær hende at kende:</h2>
   </div>
-</section>
+  <div>
+    <video width="640" height="360" controls>
+      <source
+        src="https://mmei.dk/kea/09_indhold/zoulikha_interview.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+</article>
 
 <style>
   #syerske-tag {
@@ -59,9 +67,6 @@ import Cardsplaces from "../components/Cards.astro";
     grid-template-columns: 1fr 2fr;
     gap: 96px;
   }
-  .video-section-container {
-    padding: 80px 200px;
-  }
   .text-container {
   }
   p {
@@ -77,6 +82,18 @@ import Cardsplaces from "../components/Cards.astro";
   .phototext {
     color: var(--red);
     padding-top: 0px;
+  }
+
+  .video {
+    padding-left: 200px;
+    padding-top: 100px;
+  }
+
+  video {
+    width: 100%;
+    align-content: baseline;
+    height: auto;
+    aspect-ratio: 16/9;
   }
   @media (max-width: 1100px) {
     .section-container {
@@ -96,15 +113,14 @@ import Cardsplaces from "../components/Cards.astro";
     #syerske-tag h2 {
       display: flex;
     }
-    .video-section-container {
-      padding: 70px 0px;
-    }
+
     .card-container {
       padding: 20px 10px;
     }
-    /* .section-container{
-        display: flex;
-        flex-direction: column;
-    } */
+
+    .video {
+      padding-left: 10px;
+      padding-top: 50px;
+    }
   }
 </style>
